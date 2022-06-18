@@ -1,0 +1,53 @@
+/*este archivo css cambia los estylos de la tabla del index.html*/
+
+/*le damos bordes a la tabla*/
+table{
+    border: solid 3px black;
+}
+
+/*agregamos una imagen de fondo los posicionamos en el centro tanto por el eje x y por el eje y,
+y un tamaño de imagen del 100%, la imagen se puede repetir*/
+section{
+    background-image: url(../img/imagen\ fondo\ merceria.png);
+    
+    background-position-x:center;
+    background-position-y:center;
+    background-size: 100%;
+}
+
+/*poisionamos al texto en el centro, le damos color y tamaño*/
+h2{
+    text-align: center;
+    color: blueviolet;
+    font-size: xx-large;
+}
+
+/*damos bordes a los elementos de la lista y peso*/
+table tr td{
+    border: solid 2px black;
+    border-top: solid 5px blue;
+    border-bottom: solid 5px blue;
+    font-weight: bold;
+}
+
+/*a cada titulo de la tabla se le da una decoracion un tamaño y estylo*/
+table tr .tituloTabla{
+    text-decoration: underline;
+    font-size: x-large;
+    font-style: italic;
+}
+
+/* a la descripcion de cada producto se les da un estilo y un fondo de color transparente*/
+table tr .descripcion{
+    font-style: italic;
+    background-color: rgb(184, 184, 184, 0.4);
+}
+
+/* al precio de cada producto se les da un fondo de color transparente, un color de fuente, 
+una decoracion de texto y un tamaño*/ 
+table tr .precioU{
+    background-color: rgb(184, 184, 184, 0.5);
+    color: rgb(0, 30, 255);
+    text-decoration: underline 5px;
+    font-size: 25px;
+}

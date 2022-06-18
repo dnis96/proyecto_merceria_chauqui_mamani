@@ -1,0 +1,9 @@
+/*este archivo css les da estilo al formulario de la pagina contacto.html*/
+
+/*como le dimos margen y border de 0px a cada elemento de las paginas web entonces se eliminan 
+los bordes de los campos a completar, por lo que no se diferencian, entonces le dimos un color de fondo
+y un tamaño personalizado al formulario*/
+form{
+    background-color: rgba(160, 14, 160, 0.5);
+    width: 300px;
+}

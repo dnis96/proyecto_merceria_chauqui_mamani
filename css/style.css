@@ -1,0 +1,506 @@
+/*Este archivo css es usado para cambiar los estylos de todos los elementos que tienen en comun todas las paginas web*/
+
+/*reseteamos el borde y el maegen en 0, agregamos un border-box para que el 
+elemento mida exactamente lo que especificaste en el ancho y alto y una familia de tipografias*/
+*{
+    border: 0px;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Macondo', cursive;
+}
+
+body{
+    background: white;
+    background-position: center center;
+    background-repeat: no-repeat;
+    display: grid;
+    height: 100vh;
+    grid-template-areas: "header header"
+                         "categorias  main"
+                         "footer  footer";
+    grid-template-rows: 562px 1fr 50px;
+    grid-template-columns: 250px 1fr;
+}
+
+.body-t{
+    background: white;
+    background-position: center center;
+    background-repeat: no-repeat;
+    display: grid;
+    height: 100vh;
+    grid-template-areas: "header header"
+                         "main  main"
+                         "footer  footer";
+    grid-template-rows: 562px 1fr 50px;
+    grid-template-columns: 250px 1fr;
+}
+
+header{
+    grid-area: header;
+}
+  
+aside{
+    grid-area: categorias;
+}
+  
+main{
+    grid-area: main;
+}
+  
+footer{
+    grid-area: footer;
+}
+
+/*al encabezado le agregamos un color de fondo, un relleno, tamaño de letra
+y un peso*/
+header{
+    display: flex;
+    flex-direction: column;
+    /*background-color: rgb(241, 206, 206);*/
+    /*font-size: 35px;
+    font-weight: bold;*/
+}
+
+
+.encabezado{
+    /*display: inline-block;
+    padding: 0px;*/
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    height: 89px;
+}
+
+.logo {
+    /*display: block;*/
+    filter: brightness(1.1);
+    mix-blend-mode: multiply;
+    width: 100px;
+    height: 100px;
+}
+
+/*.logoM {
+    top: 0px;
+}*/
+
+header nav ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.icono{
+    width: 30px;
+    height: 30px;
+    display: block;
+    margin: auto;
+}
+
+header h1{
+    /*top: 25px; 
+    left: 110px;*/
+    font-size: 35px;
+    font-weight: bold;
+    
+}
+
+/*.logoF {
+    position: absolute;
+    top: 0px;  
+    right: 0px;
+}*/
+
+.menu-icono{ 
+    display: none;
+    /*width: 40%; 
+    height: 40px; 
+    padding: 12px 2% 0px 3%; 
+    
+    border-top: 1px solid #094660; 
+    border-bottom: 1px solid #094660;*/
+}
+/*a los elementos de la lista le quitamos la decoracion*/
+nav a{
+    text-decoration: none;
+    color: #1d518d;
+}
+
+
+nav ul{
+    /*padding: 0px;*/
+    /*background-color: antiquewhite;*/
+}
+
+/*la lista tambien venian con decoracion asi que la quitamos, le agregamos un display
+inline-block (para que se coloquen en la misma linea y si por si en algun momento querramos cambiarle el alto y ancho)*/
+nav ul li{
+    list-style: none;
+    padding: 10px;
+    /*border:solid 1px antiquewhite;
+    background-color:antiquewhite;
+    margin: -2px;*/
+}
+
+/*cuando se coloca el mouse sobre un elemento del nav,
+el color de fondo cambia*/
+nav ul li:hover{
+    background-color: darkgrey;
+    
+}
+
+.fotoslocal{
+    height: 400px;
+}
+
+.fotoL{
+    height: 100%;
+    width: 100%;
+}
+
+footer{
+    background-color: blueviolet;
+}
+
+main{
+    display: flex;
+    flex-direction: row;
+    justify-content:flex-start;
+    flex-shrink: 4;
+    /*background-color: rgb(241, 206, 206);*/
+}
+
+aside{
+    background-color: rgb(249, 245, 245);
+    border-right: double 2px ;
+}
+
+/*dandole estylos a la lista de productos*/
+section{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+h4{
+    font-size: xx-large;
+}
+
+.listaProductos{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+
+.prod{
+    border: solid rgb(131, 124, 141) 2px;
+}
+
+.imagenProducto{
+    display:block;
+    margin:auto;
+    width: 200px;
+    height: 150px;
+}
+
+.button{
+    background-color: aquamarine;
+    border:double black 1px;
+    border-radius: 10px;
+}
+
+/*estilos a la pagina quienes somos*/
+.quienesS{
+    display: flex;
+    flex-direction: column;
+}
+
+.card{
+    display: flex;
+    flex-direction: row;
+    border: solid black 5px;
+    border-radius: 10px;
+}
+
+.imagenQ{
+    width: 600px;
+    height: 300px;
+}
+
+.textoQ{
+    text-align: center;
+}
+
+
+/*stylos a la pagina contacto*/
+form{
+    background-color: rgba(160, 14, 160, 0.5);
+    width: 300px;
+}
+
+.card{
+    background: white;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+}
+
+/*h3{
+    opacity: 0.5;
+    font-weight: 400;
+}*/
+
+
+/*estilos para card productos*/
+.gallery{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin: 50px 0;
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 20%;
+    margin: 5px;
+    float: left;
+    text-align: center;
+    border-radius: 20px;
+    cursor: pointer;
+    padding-top: 10px;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 25);
+    transition: .4s;
+    background: rgb(242, 236, 236);
+    
+}
+
+.content:hover{
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 16), 0 3px 6px rgba(0, 0, 0, 23);
+    transform: translate(0px, -8px);
+    background: rgb(241, 206, 206);
+
+}
+
+.imagen-prod{
+    width: 80%;
+    height: 80%;
+    margin: auto;
+    display: block;
+    
+}
+
+.desc-prod{
+    text-align: center;
+    color: #305768;
+    padding-top: 0 8px;
+}
+
+.nombre-prod{
+    text-align: center;
+    font-size: 30px;
+    padding-top: 10px;
+    color: #16151b;
+    font-style: italic;
+}
+
+.prec-prod{
+    text-align: center;
+    font-size: 26px;
+    color: #1d518d;
+    margin: 0;
+}
+
+.star-prod{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 0;
+}
+
+.star-prod li{
+    padding-top: 5px;
+}
+
+.fa{
+    font-size: 25px;
+    transition: .4s;
+    margin: 3px;
+}
+
+.cheked{
+    color: #ff9f43;
+}
+
+.fa:hover{
+    transform: scale(1.3);
+    transition: .6s;
+}
+
+button{
+    text-align: center;
+    font-size: 24px;
+    color: #fff;
+    width: 100%;
+    padding: 15px;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+    margin-top: 5px;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+.buy-1{
+    background: #2183a2;
+}
+
+.buy-2{
+    background: #b2bec3;
+}
+
+.buy-3{
+    background: rebeccapurple;
+}
+
+.buy-4{
+    background: rgb(200, 71, 24);
+}
+
+
+
+
+
+
+
+@media (max-width: 1200px){
+    
+    .content{
+        width: 30%;
+    }
+    .imagenQ{
+        width: 60%;
+        height: 200px;
+    }
+}
+
+@media (max-width: 1024px){
+    
+    .content{
+        width: 40%;
+    }
+}
+
+@media (max-width: 768px){
+    body{
+        display: flex;
+        flex-direction: column;
+    }
+    .categorias{
+        display: none;
+    }
+    .content{
+        width: 45%;
+    }
+    .cont-imagen-prod{
+        width: 100%;
+    }
+    .fa{
+        font-size: 25px;
+        transition: .4s;
+        margin: 0;
+    }
+}
+
+@media (max-width: 480px){
+    body{
+        display: flex;
+        flex-direction: column;
+    }
+    .body-t{
+        display: flex;
+        flex-direction: column;
+    }
+    header h1{
+        font-size: 90%;
+        text-align: center;
+        margin: 0px;
+    }
+    .encabezado{
+        height: auto;
+    }
+    .fotoslocal{
+        height: 100%;
+    }
+    .categorias{
+        display: none;
+    }
+    .logo{
+        width: 50px;
+        height: 50px;
+    }
+    .menuP ul li a{
+        font-size: 15px;
+    }
+    .content{
+        width: 40%;
+    }
+    .cont-imagen-prod{
+        width: 100%;
+    }
+    .fa{
+        font-size: 20px;
+        transition: .4s;
+        margin: 0;
+    }
+}
+
+@media (max-width: 320px){
+    body{
+        display: flex;
+        flex-direction: column;
+    }
+    .body-t{
+        display: flex;
+        flex-direction: column;
+    }
+    .fotoslocal{
+        height: 100%;
+    }
+    .encabezado{
+        height: auto;
+    }
+    .menuP ul li a{
+        font-size: 10px;
+    }
+    .logo{
+        width: 50px;
+        height: 50px;
+    }
+    .categorias{
+        display: none;
+    }
+    .content{
+        width: 50%;
+    }
+    .cont-imagen-prod{
+        width: 100%;
+    }
+    .fa{
+        font-size: 20px;
+        transition: .4s;
+        margin: 0;
+    }
+    .imagenQ{
+        width: 100%;
+        height: 100%;
+    }
+}

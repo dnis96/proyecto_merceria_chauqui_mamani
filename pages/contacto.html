@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <!--<link rel="stylesheet" href="../css/styleContacto.css">-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100&display=swap" rel="stylesheet">
+    <title>MERCERIA DEL VALLE</title>
+</head>
+<body id="body-c">
+    <header>
+        <div class="encabezado">
+            <img class="logo logoM" src="../img/merceria.png" alt="logo">
+            <h1>MERCERIA DEL VALLE</h1>
+            <a href=""><img class="logo logoF" src="../img/logo face.png" alt="logoF"></a>
+        </div>
+        <nav class="menu-icono">
+            <img src="../img/menuicono1.png.crdownload" alt="icono-menu">
+        </nav>
+            <nav class="menuP">
+                <ul>
+                    <!--<li><a href="index.html">Inicio</a></li>cuando esta de esa forma y voy a cualquier pagina del menu y luego vuelvo a inicio no me aparecen los demas elementos creados que no sean el menu unicamente-->
+                    <!--<li><a href="#">Inicio</a></li>cuando esta de esa forma y voy a cualquier pagina del menu y luego vuelvo a inicio no me aparecen los demas elementos creados que no sean el menu unicamente-->
+                    <li>
+                        <a href="../index.html">
+                        <div ><img class="icono" src="../img/inicio.png" alt="icono inicio"></div> Inicio
+                        </a>
+                    </li>
+                    <li>
+                        <a href="../pages/ofertas.html">
+                            <div ><img class="icono" src="../img/telas.png" alt="icono inicio"></div>Ofertas
+                        </a>
+                    </li>
+                    <li>
+                        <a href="../pages/quienes_somos.html">
+                            <div ><img class="icono" src="../img/quienes-somos.png" alt="icono inicio"></div>Quienes Somos
+                        </a>
+                    </li>
+                    <li>
+                        <a href="../pages/contacto.html">
+                            <div ><img class="icono" src="../img/inicio.png" alt="icono inicio"></div>Contacto
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        <div class="fotoslocal">
+            <img class="fotoL" src="../img/merceria local.jpg" alt="localM">
+        </div>     
+    </header>
+    
+    <h1>CONTACTO</h1>        
+    <form>
+        <label for="nombre">Nombre:</label>
+        <input type="nombre" placeholder="DECIME TU NOMBRE" required>
+        <br>
+        <label for="apellido">Apellido:</label>
+        <input type="apellido" placeholder="DECIME TU APELLIDO" required>
+        <br>
+        <label for="email">Corre electronico:
+            <input type="email" placeholder="ejemplo@gmail.com" name="email" required><br>
+        </label>
+        <label for="radio">sexo:</label>
+        <label><input type="radio" name="sexo" value="hombre" />M</label>
+        <label><input type="radio" name="sexo" value="mujer" />F</label>
+        <br>
+        <label for="letra">Estado Civil</label>
+				<select name="estado_civil" id="letra"> 
+					<option value="s">soltero/a</option>
+					<option value="c">casado/a</option>
+				</select>
+        <br>
+        <label for="chexbox">desea recibir el Newsletter</label><input type="checkbox" name="acepta" value="si" />
+        <br>
+        <label for="textoarea">Consulta</label>
+        <br>
+        <textarea name="consulta" id="textoarea" cols="30" rows="10" required></textarea>
+        <!--El atributo name es necesario para hacer referencia a los datos del formulario 
+            después de enviar el formulario (si omite el atributo name, no se enviará ningún dato del área de texto).-->
+        <!--el id para asociar el textarea con el label-->
+        <br> 
+        <input type="submit" value="ENVIAR CONTACTO">
+		<input type="reset" value="RESETEAR">
+    </form>
+    <footer>
+        <address>San Carlos, Salta, Argentina</address>
+        <small>&copy; Derechos Reservados 2022</small>
+    </footer>
+</body>
+</html>
